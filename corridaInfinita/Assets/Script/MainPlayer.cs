@@ -15,4 +15,11 @@ public class MainPlayer : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if(c.tag == "morte")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
